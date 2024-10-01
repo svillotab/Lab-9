@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento 9</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <p class="chat">Whatsapp</p>
+        <div id="menu">
+            <div style="clear:both"></div>
+        </div>
+        
+        <div id="chatbox"></div>
+
+        <div class="botones">
+        <form name="message1" class="user-form" onsubmit="sendMessage(event, 'user1')">
+            <input name="usermsg1" type="text" id="usermsg1" size="63" autocomplete="off" placeholder="Escribe algo"/>
+            <input name="submitmsg1" type="submit" id="submitmsg1" value="SEND" />
+        </form>
+
+        <form name="message2" class="user-form" onsubmit="sendMessage(event, 'user2')">
+            <input name="usermsg2" type="text" id="usermsg2" size="63" autocomplete="off" placeholder="Escribe algo"/>
+            <input name="submitmsg2" type="submit" id="submitmsg2" value="SEND" />
+        </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
